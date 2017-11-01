@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+          <h1>Weather Forecast</h1>
+        </div>
+        <div class="main-links">
+          <ul>
+            <li>
+              <a [routerLink]="['seattle']">Seattle</a>
+            </li>
+            <li>
+              <a [routerLink]="['sanjose']">San Jose, CA</a>
+            </li>
+            <li>
+              <a [routerLink]="['burbank']">Burbank, CA</a>
+            </li>
+            <li>
+              <a [routerLink]="['dallas']">Dallas, TX</a>
+            </li>
+            <li>
+              <a [routerLink]="['washington']">Washington D. C.</a>
+            </li>
+            <li>
+              <a [routerLink]="['chicago']">Chicago, IL</a>
+            </li>
+          </ul>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+  
+</body>
+</html>
